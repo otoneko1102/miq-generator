@@ -33,6 +33,8 @@ function displayImage(imageUrl) {
   const generatedImageContainer = document.getElementById("generatedImage");
   const imgElement = document.createElement("img");
   imgElement.src = imageUrl;
+  imgElement.style.maxWidth = "50%";
+  imgElement.style.maxHeight = "50%"; 
   generatedImageContainer.innerHTML = '';
   generatedImageContainer.appendChild(imgElement);
 }
