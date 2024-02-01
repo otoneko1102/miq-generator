@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiQ Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MiQ Generator</h1>
+  <form>
+    <label for="displayName">Display Name:</label>
+    <input type="text" id="displayName" name="displayName" required><br>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" required></textarea><br>
+    
+    <label for="option">Option:</label>
+    <select id="option" name="option">
+      <option value="false" selected>Grayscale</option>
+      <option value="true">Color</option>
+    </select><br>
+
+    <label for="icon">Icon:</label>
+    <input type="file" id="icon" name="icon" accept="image/*">
+    <button type="button" onclick="clearFileInput()">Clear</button><br>
+    <label for="iconUrl">Icon URL:</label>
+    <input type="text" id="iconUrl" name="iconUrl" required><br>
+
+    <br>
+    
+    <button type="button" onclick="generate()">Generate</button>
+  </form>
+
+  <div id="generatedImage"></div>
+
+  <a href="https://discord.gg/yKW8wWKCnS" target="_blank"><img src="https://discordapp.com/api/guilds/1005287561582878800/widget.png?style=banner2" alt="Discord Banner"/></a>
+    
+  <script src="script.js"></script>
+</body>
+</html>
